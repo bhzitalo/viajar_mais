@@ -1,41 +1,47 @@
-# ✈️ Viajar + 
+# ✈️ Viajar +
 
-O **Viajar +** é um projeto de estudo desenvolvido para praticar as bases do desenvolvimento web. O objetivo é criar uma página de destinos turísticos onde o usuário pode visualizar fotos de experiências reais e escolher seu próximo destino.
+Projeto de site institucional de viagens com carrossel interativo e modo escuro.
 
-## 🚀 O que já foi feito (Status Atual)
+O objetivo deste projeto foi praticar **HTML semântico**, **CSS moderno com variáveis**, **responsividade básica** e **JavaScript puro (Vanilla JS)** para manipulação de DOM.
 
-Atualmente, o projeto possui a estrutura fundamental em **HTML5**, focando em semântica e acessibilidade:
+## 📸 Preview
 
-- **Cabeçalho Semântico:** Uso de `<header>` e `<nav>` para navegação principal.
-- **Galeria de Experiências:** Uma seção dedicada a fotos de viajantes reais (User Generated Content) para passar autenticidade.
-- **Grade de Destinos:** Organização de cards usando a tag `<article>`, contendo:
-  - Miniatura do destino.
-  - Título hierarquizado (`<h4>`).
-  - Link direto para páginas específicas de cada localidade.
-- **Rodapé:** Finalização com informações de copyright e propósito da página.
+### O projeto conta com
 
-## 🛠️ Tecnologias Utilizadas
+- Carrossel automático com navegação manual
+- Dark Mode com toggle acessível
+- Layout organizado com Flexbox
+- Estrutura semântica HTML5
+- CSS com variáveis e tema dinâmico
 
-- **HTML5:** Estruturação semântica de toda a página.
-- **Imagens:** Uso de diversos formatos (.jpg, .webp, .jpeg) para entender a compatibilidade de mídia.
+## 🚀 Tecnologias Utilizadas
 
-## 📅 Próximas Atualizações (Backlog)
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+- Flexbox
+- Variáveis CSS (`:root`)
+- Manipulação de DOM
+- Acessibilidade básica com ARIA
 
-O projeto está em constante evolução. Os próximos passos técnicos são:
+## 📂 Estrutura do Projeto
+📁 projeto</br>
+├── index.html</br>
+├── style.css</br>
+├── script.js</br>
+└── img/
 
-1. **Estilização com CSS3:**
-   - Criar um layout responsivo (Mobile First).
-   - Implementar a Galeria em formato de Carrossel horizontal.
-   - Adicionar efeitos de `:hover` nos cards de destino para melhorar a interatividade.
-   - Estilizar os botões e links de navegação.
+## 💡 Melhorias Futuras
 
-2. **Interatividade com JavaScript:**
-   - Implementar funções para carregamento dinâmico de informações.
-   - Criar um menu hambúrguer para dispositivos móveis.
+- Adicionar página individual para cada destino
 
-3. **Expansão de Conteúdo:**
-   - Criação das páginas individuais para cada destino (Gramado, Tóquio, Roma, etc.).
-   - Adicionar uma seção de contato com formulário de validação.
+Desenvolvido como projeto de prática para evolução em Front-End.
 
----
-*Desenvolvido como exercício de estudo para o curso de Análise e Desenvolvimento de Sistemas.*
+
+## 📄 Licença
+
+Projeto para fins educacionais. 
+Desenvolvido como projeto de prática para evolução em Front-End.
+
+
+
