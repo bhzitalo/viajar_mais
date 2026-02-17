@@ -3,83 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Viajar + - Descubra destinos incríveis no Brasil e no mundo com segurança e conforto.">
     <title>Viajar +</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
+  <body id="topo">
     <header> <!-- Cabeçalho -->
       <h1>✈️ Viajar +</h1>
       <nav>
         <ul>
-          <li><a href="#">Início</a></li>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
           <li><a href="#destinos">Destinos</a></li>
         </ul>
       </nav>
+      <button id="toggle-dark" aria-label="Alternar modo escuro" aria-pressed="false">🌙</button>
     </header>
     
     <main>
-      <section id="destinos">
+      <!-- Galeria de Imagens (carrossel) -->
+      <section id="galeria">
         <h2>Destinos Para Você Conhecer o Brasil e o Mundo ✈️</h2>
-        
-        <div class="galeria"> <!-- Galeria de Imagens (carrossel)-->
-          <img src="img/img1.jpg" alt="Imagem 1" width="400">
-          <img src="img/img2.jpg" alt="Imagem 2" width="400">
-          <img src="img/img3.webp" alt="Imagem 3" width="400">
-          <img src="img/img4.webp" alt="Imagem 4" width="400">
-          <img src="img/img5.jpg" alt="Imagem 5" width="400">
-          <img src="img/img6.jpg" alt="Imagem 6" width="400">
-          <img src="img/img7.jpg" alt="Imagem 7" width="400">
-          <img src="img/img8.JPG" alt="Imagem 8" width="400">
-          <img src="img/img9.jpeg" alt="Imagem 9" width="400">
-          <img src="img/img10.jpeg" alt="Imagem 10" width="400">
+        <div class="galeria" role="region" aria-label="Carrossel de destinos turísticos">
+          <img src="img/img0.jpg" alt="Gramado, RS" class="ativa">
+          <img src="img/img1.jpg" alt="Fernando de Noronha, PE">
+          <img src="img/img2.jpg" alt="Bonito, MS">
+          <img src="img/img3.jpg" alt="Tóquio, Japão">
+          <img src="img/img4.jpg" alt="Roma, Itália">
+          <img src="img/img5.jpg" alt="Cidade do Cabo, África do Sul">
+          <button type="button" class="btn-carrossel prev" aria-label="Slide anterior">&#10094;</button>
+          <button type="button" class="btn-carrossel next" aria-label="Próximo slide">&#10095;</button>
         </div>
+      </section>
         
-        <div class="escolha-destino"> <!-- Seletor de Destino -->
-          <h3>Escolha um destino:</h3>
+      <!-- Sobre nós -->
+      <section id="sobre">
+        <div class="sobre-conteudo">
+          <h2>Sobre Nós</h2>
+          <p>
+            No <strong>Viajar +</strong>, nossa missão é transformar sonhos em destinos. 
+            Te levamos para viajar com toda a segurança e o conforto que um verdadeiro viajante merece. 
+            Do planejamento ao embarque, cuidamos de cada detalhe para que sua única preocupação 
+            seja colecionar memórias inesquecíveis. <strong>Venha explorar o mundo com a gente!</strong>
+          </p>
+        </div>
+      </section>
+        
+      <!-- Sessão para escolher o destino -->
+      <section id="destinos">
+          <h2>Escolha um destino:</h2>
           <div class="grade-destinos">
-
             <article class="card">
-              <img src="img/gramado.webp" alt="Gramado, RS" width="200">
-              <h4>Gramado, RS</h4>
-              <a href="#">Conhecer Destino</a>
+              <img src="img/gramado.webp" alt="Gramado, RS">
+              <h3>Gramado, RS</h3>
+              <a href="#" aria-label="Conhecer Gramado, Rio Grande do Sul">Conhecer Destino</a>
             </article>
             
             <article class="card">
-              <img src="img/noronha.jpg" alt="Fernando de Noronha, PE" width="200">
-              <h4>Fernando de Noronha, PE</h4>
-              <a href="#">Conhecer Destino</a>
+              <img src="img/noronha.jpg" alt="Fernando de Noronha, PE">
+              <h3>Fernando de Noronha, PE</h3>
+              <a href="#" aria-label="Conhecer Fernando de Noronha, Pernambuco">Conhecer Destino</a>
             </article>
 
             <article class="card">
-              <img src="img/bonito.jpg" alt="Bonito, MS" width="200">
-              <h4>Bonito, MS</h4>
-              <a href="#">Conhecer Destino</a>
+              <img src="img/bonito.jpg" alt="Bonito, MS">
+              <h3>Bonito, MS</h3>
+              <a href="#" aria-label="Conhecer Bonito, Mato Grosso do Sul">Conhecer Destino</a>
             </article>
 
             <article class="card">
-              <img src="img/toquio.webp" alt="Toquio, Japão" width="200">
-              <h4>Toquio, Japão</h4>
-              <a href="#">Conhecer Destino</a>
+              <img src="img/toquio.webp" alt="Tóquio, Japão">
+              <h3>Tóquio, Japão</h3>
+              <a href="#" aria-label="Conhecer Tóquio, Japão">Conhecer Destino</a>
             </article>
 
             <article class="card">
-              <img src="img/roma.webp" alt="Roma, Itália" width="200">
-              <h4>Roma, Itália</h4>
-              <a href="#">Conhecer Destino</a>
+              <img src="img/roma.webp" alt="Roma, Itália">
+              <h3>Roma, Itália</h3>
+              <a href="#" aria-label="Conhecer Roma, Itália">Conhecer Destino</a>
             </article>
 
             <article class="card">
-              <img src="img/cidadedocabo.jpg" alt="Cidade do Cabo, África do Sul" width="200">
-              <h4>Cidade do Cabo, África do Sul</h4>
-              <a href="#">Conhecer Destino</a>
+              <img src="img/cidadedocabo.jpg" alt="Cidade do Cabo, África do Sul">
+              <h3>Cidade do Cabo, África do Sul</h3>
+              <a href="#" aria-label="Conhecer Cidade do Cabo, África do Sul">Conhecer Destino</a>
             </article>
 
           </div>
-        </div>
       </section>
     </main>
  <footer>
-  <p>&copy; 2026 Viajar Mais - O seu guia de aventuras.</p>
+  <p>&copy; 2026 Viajar +</p>
  </footer>
+ <script src="script.js"></script>
   </body>
 </html>
